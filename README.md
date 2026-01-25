@@ -720,7 +720,8 @@ echo "*.pyc" >> .gitignore
 **Catch Up AI 채널**
 - YouTube: https://www.youtube.com/@catchupai/
 - Email: solkit70@gmail.com
-- GitHub: https://github.com/solkit70/MCP_Basic_Higher_Models_GC.git
+- GitHub (Vibe Coding): https://github.com/solkit70/MCP_Basic_Higher_Models_GC.git
+- GitHub (Methodology Template): https://github.com/solkit70/CatchUpAI_VL_Template.git
 
 ---
 
