@@ -59,12 +59,13 @@ CUA_VL은 AI와 함께 체계적으로 학습하고, 학습 과정 자체를 "�
 
 ### Phase 3: 일일 학습 (반복 사이클)
 
-1. Roadmap + 최신 WorkLog 읽기
-2. 현재 진행 상황 평가 (완료/미완료 작업, DoD 상태)
-3. 오늘의 학습 계획 제안 (우선순위, 시간 배분, 20% 버퍼 포함)
-4. 실습 중심 학습 가이드 + 산출물 생성
-5. WorkLog 작성: `vl_worklog/YYYYMMDD_MX_{TopicName}.md`
-6. Daily Retrospective (잘한 점, 개선점, 내일 할 일)
+1. `vl_prompts/daily_learning_prompt.md`를 읽고, 그 안의 Step 1~5 프로세스에 따라 진행
+2. **Step 1**: Roadmap + 최신 WorkLog 읽기 → 현재 상태 요약
+3. **Step 2**: 오늘의 학습 계획 수립 (우선순위, 시간 배분, 20% 버퍼 포함)
+4. **Step 3**: 학습 계획을 사용자에게 제시하고 **승인을 받은 후** 진행
+5. **Step 4-5**: 실습 중심 학습 가이드 + 산출물 생성
+6. WorkLog 작성: `vl_worklog/YYYYMMDD_MX_{TopicName}.md`
+7. Daily Retrospective (잘한 점, 개선점, 내일 할 일)
 
 ### Phase 4: 모듈/Topic 완료
 
