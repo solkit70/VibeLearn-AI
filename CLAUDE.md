@@ -46,8 +46,8 @@ VibeLearn AI는 AI와 함께 체계적으로 학습하고, 학습 과정 자체�
    - 템플릿 파일을 **전체 그대로** 복사한다
    - `[1단계] Topic 정보` 섹션의 플레이스홀더(`{TOPIC_NAME}`, `{DURATION}`, `{LEARNING_GOALS}` 등)만 `topic_info.md`의 실제 값으로 채운다
    - `[2단계]`, `[3단계]` 등 나머지 섹션은 **수정 없이 전체 유지**한다 (임의 축약 금지)
-   - Claude Skill(`/cua-vl`)이 설치된 경우: `/cua-vl roadmap` 또는 `/cua-vl daily` 명령어가 이 과정을 자동화함
-   - Skill이 없는 경우: AI가 직접 `topic_info.md`를 읽어 플레이스홀더를 채운 후 저장
+   - Claude Code에서 `/cua-vl` 스킬이 설치된 경우: `/cua-vl roadmap` 또는 `/cua-vl daily` 명령어로 자동화 가능
+   - Gemini, Codex 등 다른 AI 도구 또는 스킬 미설치 시: AI가 직접 `topic_info.md`를 읽어 플레이스홀더를 채운 후 저장
 
 ### Phase 2: Roadmap 생성 (Topic당 1회)
 
