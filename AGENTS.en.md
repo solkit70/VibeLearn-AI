@@ -7,6 +7,8 @@ VibeLearn AI is a learning methodology for systematically learning with AI and t
 
 **Core Philosophy**: "Learn with AI, structure what you've learned, and pave the way for the next learner."
 
+> **Execution Environment Note**: This workflow **works completely from this system prompt alone**. The Claude Skill (`/cua-vl`) in `extras/claude-skill/` is only an **optional** helper that automates folder creation and file lookup — even without it installed, follow Phases 1-4 below directly using whatever tools are available (Read/Write/Bash, etc.) for the same result.
+
 ---
 
 ## Activation Conditions
