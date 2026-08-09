@@ -1,4 +1,4 @@
-﻿# VibeLearn AI
+# VibeLearn AI
 
 🌐 **Language / 언어**: [한국어](README.md) | [English](README.en.md)
 
@@ -515,6 +515,7 @@ Self-Assessment 실습 문제는 다음 원칙을 따름:
    - Roadmap Prompt를 AI에게 전달
    - Topic 정보 제공
    - 생성된 Roadmap을 `vl_roadmap/YYYYMMDD_RoadMap_[Topic].md`에 저장
+   - 주의: `roadmap_prompt.md`의 STEP 1은 학습 기간 적정성 검토와 사용자 확인 대기입니다. 사용자 승인 전에는 Roadmap 파일을 만들지 않습니다.
 
 2. **Roadmap 검토 및 조정**
    - 학습 범위 적절성 확인

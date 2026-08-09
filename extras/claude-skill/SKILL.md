@@ -1,4 +1,4 @@
-﻿---
+---
 name: cua-vl
 description: VibeLearn AI 학습 방법론을 지원합니다. 새 Topic 시작, Roadmap 생성, 일일 학습 계획 수립을 도와줍니다.
 allowed-tools:
@@ -147,6 +147,11 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
 - topic_info.md가 없으면 진행하지 말 것
 - 프롬프트는 그대로 제공 (사용자가 실행)
 - Roadmap 생성은 별도 대화에서 진행됨을 안내
+- 같은 세션에서 Roadmap을 직접 생성하는 경우, 완성된 `vl_prompts/roadmap_prompt.md`를 단순 참고가 아니라 실행 프롬프트로 취급한다.
+- `roadmap_prompt.md` 전체를 다시 읽고 `[2단계]`를 순서대로 실행한다.
+- `사용자 확인 필요`, `중단하고 대기`, `승인 후 진행`이 있으면 즉시 멈추고 사용자 응답을 기다린다.
+- 사용자 승인 전에는 `vl_roadmap/...RoadMap...md`를 생성하지 않는다.
+- 실행 전 `{PLACEHOLDER}` 또는 literal `` `n `` 주입 오류를 확인하고 먼저 수정한다.
 
 ---
 

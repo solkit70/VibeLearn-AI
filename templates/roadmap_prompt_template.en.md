@@ -1,4 +1,4 @@
-﻿# VibeLearn AI Roadmap Generation Prompt
+# VibeLearn AI Roadmap Generation Prompt
 
 **Version**: 2.0
 **Created**: 2025-12-28
@@ -13,9 +13,11 @@ This prompt automatically generates a learning roadmap based on the Topic inform
 **Procedure**:
 1.  Once the Topic folder is created, this file is copied to `[TopicName]/vl_prompts/`.
 2.  The Topic information is already injected.
-3.  Provide this entire file to the AI.
-4.  The AI generates a standard VibeLearn AI roadmap.
-5.  Save the generated roadmap to `vl_roadmap/YYYYMMDD_RoadMap_{Topic}.md`.
+3.  Provide this entire file to the AI, or if an agent is executing it directly, re-read the generated `vl_prompts/roadmap_prompt.en.md` in full.
+4.  AI first performs only STEP 1, the learning-duration suitability review, and waits for user confirmation.
+5.  Only after the user confirms the duration/scope, proceed with STEP 2 and STEP 3 to generate the Roadmap and save it to `vl_roadmap/YYYYMMDD_RoadMap_{Topic}.md`.
+
+**Important**: Do not create the Roadmap file before user approval.
 
 ---
 

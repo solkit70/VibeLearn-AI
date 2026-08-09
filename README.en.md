@@ -1,4 +1,4 @@
-﻿# VibeLearn AI
+# VibeLearn AI
 
 🌐 **Language / 언어**: [한국어](README.md) | [English](README.en.md)
 
@@ -515,6 +515,7 @@ You need to create an MCP server that provides a simple file-reading function.
    - Pass the Roadmap Prompt to the AI
    - Provide Topic information
    - Save the generated Roadmap to `vl_roadmap/YYYYMMDD_RoadMap_[Topic].md`
+   - Note: STEP 1 in `roadmap_prompt.md` is the learning-duration suitability review and user-confirmation gate. Do not create the Roadmap file before user approval.
 
 2. **Review and Adjust Roadmap**
    - Check if the learning scope is appropriate

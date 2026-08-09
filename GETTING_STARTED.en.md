@@ -1,4 +1,4 @@
-﻿# VibeLearn AI Quick Start Guide
+# VibeLearn AI Quick Start Guide
 
 🌐 **Language / 언어**: [한국어](GETTING_STARTED.md) | [English](GETTING_STARTED.en.md)
 
@@ -201,16 +201,14 @@ Once the Topic folder is created, use the prompt below with your AI.
 
 **Prompt Template**:
 ```
-"Please read the `Topics/[TopicName]/vl_prompts/roadmap_prompt.md` file and generate a learning roadmap.
-
-Once done, please guide me on what to do for the next step."
+"Please read the full `Topics/[TopicName]/vl_prompts/roadmap_prompt.md` file and perform only STEP 1, the learning-duration suitability review, first.
+Do not create the Roadmap file before my confirmation; wait for my response."
 ```
 
 **Example**:
 ```
-"Please read the `Topics/Deep-Agent/vl_prompts/roadmap_prompt.md` file and generate a learning roadmap.
-
-Once done, please guide me on what to do for the next step."
+"Please read the full `Topics/Deep-Agent/vl_prompts/roadmap_prompt.md` file and perform only STEP 1, the learning-duration suitability review, first.
+Do not create the Roadmap file before my confirmation; wait for my response."
 ```
 
 **What the AI does**:
@@ -370,8 +368,9 @@ VibeLearn AI_v2.0/                   # Distribution package (root)
     -   Prompt files are prepared.
 
 3.  **Generate Roadmap** (30-60 min)
-    -   Provide the `roadmap_prompt.md`.
-    -   The AI creates a module-by-module plan.
+    -   Provide the full `roadmap_prompt.md`.
+    -   The AI first presents duration suitability analysis and waits for user confirmation.
+    -   After user approval, the AI creates a module-by-module plan.
     -   Review and adjust.
 
 ---

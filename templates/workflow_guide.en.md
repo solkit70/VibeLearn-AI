@@ -1,4 +1,4 @@
-﻿# VibeLearn AI Workflow Guide
+# VibeLearn AI Workflow Guide
 
 **Version**: 1.0
 **Created**: 2026-01-25
@@ -99,7 +99,7 @@ mkdir -p "Topics/$topic"/{vl_prompts,vl_roadmap,vl_worklog,vl_materials}
 #### 2.1 Prompt to Send to the AI
 
 ```
-Please generate a learning Roadmap according to the VibeLearn AI methodology.
+Please first perform the learning-duration suitability review (STEP 1) according to the VibeLearn AI methodology, and do not create the Roadmap before user confirmation.
 
 ## Topic Information
 [Paste the content of topic_info.md here]
@@ -131,6 +131,8 @@ Filename: YYYYMMDD_RoadMap_{TopicName}.md
 #### 2.2 Use Detailed Prompt (Recommended)
 
 For a more refined Roadmap, use the entire `templates/roadmap_prompt_template.md` file.
+
+**Required execution rule**: Actual Roadmap generation must execute the generated `Topics/{TopicName}/vl_prompts/roadmap_prompt.en.md` after reading it in full. STEP 1 of that prompt is the duration suitability review and user-confirmation gate, so do not create any `vl_roadmap/...` file before user approval.
 
 #### 2.3 Save the Roadmap
 

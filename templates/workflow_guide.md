@@ -1,4 +1,4 @@
-﻿# VibeLearn AI 워크플로우 가이드
+# VibeLearn AI 워크플로우 가이드
 
 **버전**: 1.0
 **생성일**: 2026-01-25
@@ -99,7 +99,7 @@ mkdir -p "Topics/$topic"/{vl_prompts,vl_roadmap,vl_worklog,vl_materials}
 #### 2.1 AI에게 보낼 프롬프트
 
 ```
-VibeLearn AI 방법론에 따라 학습 Roadmap을 생성해주세요.
+VibeLearn AI 방법론에 따라 먼저 학습 기간 적정성 검토(STEP 1)를 수행하고 사용자 확인 전에는 Roadmap을 생성하지 마세요.
 
 ## Topic 정보
 [topic_info.md 내용을 여기에 붙여넣기]
@@ -131,6 +131,8 @@ VibeLearn AI 방법론에 따라 학습 Roadmap을 생성해주세요.
 #### 2.2 상세 프롬프트 사용 (권장)
 
 더 정교한 Roadmap이 필요하면 `templates/roadmap_prompt_template.md` 파일 전체를 사용하세요.
+
+**필수 실행 규칙**: 실제 Roadmap 생성은 생성된 `Topics/{TopicName}/vl_prompts/roadmap_prompt.md`를 전체 읽고 실행한다. 해당 프롬프트의 STEP 1은 기간 적정성 검토와 사용자 확인 대기이므로, 사용자 승인 전에는 `vl_roadmap/...` 파일을 만들지 않는다.
 
 #### 2.3 Roadmap 저장
 

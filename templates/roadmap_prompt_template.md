@@ -1,4 +1,4 @@
-﻿# VibeLearn AI Roadmap 생성 프롬프트
+# VibeLearn AI Roadmap 생성 프롬프트
 
 **버전**: 2.0
 **생성일**: 2025-12-28
@@ -13,9 +13,11 @@
 **사용 절차**:
 1. Topic 폴더가 생성되면 이 파일이 `[TopicName]/vl_prompts/`에 복사됨
 2. Topic 정보가 이미 주입된 상태
-3. 이 파일 전체를 AI에게 전달
-4. AI가 VibeLearn AI 표준 로드맵 생성
-5. 생성된 로드맵을 `vl_roadmap/YYYYMMDD_RoadMap_{Topic}.md`에 저장
+3. 이 파일 전체를 AI에게 전달하거나, 에이전트가 직접 실행하는 경우 생성된 `vl_prompts/roadmap_prompt.md`를 전체 다시 읽음
+4. AI는 먼저 STEP 1의 학습 기간 적정성 검토만 수행하고 사용자 확인을 기다림
+5. 사용자가 기간/범위를 확정한 후에만 STEP 2와 STEP 3을 진행하여 Roadmap을 생성하고 `vl_roadmap/YYYYMMDD_RoadMap_{Topic}.md`에 저장
+
+**중요**: 사용자 승인 전에는 Roadmap 파일을 생성하지 마세요.
 
 ---
 

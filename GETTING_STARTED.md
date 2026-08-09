@@ -1,4 +1,4 @@
-﻿# VibeLearn AI 빠른 시작 가이드
+# VibeLearn AI 빠른 시작 가이드
 
 🌐 **Language / 언어**: [한국어](GETTING_STARTED.md) | [English](GETTING_STARTED.en.md)
 
@@ -205,18 +205,16 @@ Topic 폴더가 생성되었다면, AI에게 아래 프롬프트를 사용하세
 
 **프롬프트 템플릿**:
 ```
-"Topics/[TopicName]/vl_prompts/roadmap_prompt.md 파일을 읽고
-학습 로드맵을 생성해주세요.
-
-완료되면 다음 단계로 무엇을 하면 좋을지 안내해주세요."
+"Topics/[TopicName]/vl_prompts/roadmap_prompt.md 파일을 전체 읽고
+먼저 STEP 1의 학습 기간 적정성 검토만 진행해주세요.
+사용자 확인 전에는 Roadmap 파일을 생성하지 말고 대기해주세요."
 ```
 
 **예시**:
 ```
-"Topics/Deep-Agent/vl_prompts/roadmap_prompt.md 파일을 읽고
-학습 로드맵을 생성해주세요.
-
-완료되면 다음 단계로 무엇을 하면 좋을지 안내해주세요."
+"Topics/Deep-Agent/vl_prompts/roadmap_prompt.md 파일을 전체 읽고
+먼저 STEP 1의 학습 기간 적정성 검토만 진행해주세요.
+사용자 확인 전에는 Roadmap 파일을 생성하지 말고 대기해주세요."
 ```
 
 **AI가 하는 일**:
@@ -378,8 +376,9 @@ VibeLearn AI_v2.0/                   # 배포 패키지 (루트)
    - 프롬프트 파일 준비
 
 3. **Roadmap 생성** (30-60분)
-   - roadmap_prompt.md 전달
-   - AI가 모듈별 계획 생성
+   - roadmap_prompt.md 전체 전달
+   - AI가 먼저 기간 적정성 분석을 제시하고 사용자 확인 대기
+   - 사용자 승인 후 모듈별 계획 생성
    - 검토 및 조정
 
 ---
