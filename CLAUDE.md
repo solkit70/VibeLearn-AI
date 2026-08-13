@@ -5,7 +5,7 @@ VibeLearn AI는 AI와 함께 체계적으로 학습하고, 학습 과정 자체�
 
 **핵심 철학**: "AI와 함께 배우고, 배운 것을 구조화하여, 다음 학습자를 위한 길을 만든다."
 
-> **실행 환경 안내**: 이 워크플로우는 **이 시스템 프롬프트만으로 완전히 작동**합니다. `extras/claude-skill/`의 Claude Skill(`/cua-vl`)은 폴더 생성·파일 탐색을 자동화해 주는 **선택적** 보조 도구일 뿐이며, 설치되어 있지 않아도 아래 Phase 1~4를 이 문서의 지시에 따라 Read/Write/Bash 등 사용 가능한 도구로 직접 수행하면 동일하게 동작합니다.
+> **실행 환경 안내**: 이 워크플로우는 **이 시스템 프롬프트만으로 완전히 작동**합니다. `extras/vibelearnai-skill/`의 Claude Skill(`/vibelearn`)은 폴더 생성·파일 탐색을 자동화해 주는 **선택적** 보조 도구일 뿐이며, 설치되어 있지 않아도 아래 Phase 1~4를 이 문서의 지시에 따라 Read/Write/Bash 등 사용 가능한 도구로 직접 수행하면 동일하게 동작합니다.
 
 ---
 
@@ -49,7 +49,7 @@ VibeLearn AI는 AI와 함께 체계적으로 학습하고, 학습 과정 자체�
    - 템플릿 파일을 **전체 그대로** 복사한다
    - `[1단계] Topic 정보` 섹션의 플레이스홀더(`{TOPIC_NAME}`, `{DURATION}`, `{LEARNING_GOALS}` 등)만 `topic_info.md`의 실제 값으로 채운다
    - `[2단계]`, `[3단계]` 등 나머지 섹션은 **수정 없이 전체 유지**한다 (임의 축약 금지)
-   - Claude Code에서 `/cua-vl` 스킬이 설치된 경우: `/cua-vl roadmap` 또는 `/cua-vl daily` 명령어로 자동화 가능
+   - Claude Code에서 `/vibelearn` 스킬이 설치된 경우: `/vibelearn roadmap` 또는 `/vibelearn daily` 명령어로 자동화 가능
    - Gemini, Codex 등 다른 AI 도구 또는 스킬 미설치 시: AI가 직접 `topic_info.md`를 읽어 플레이스홀더를 채운 후 저장
 
 ### Phase 2: Roadmap 생성 (Topic당 1회)

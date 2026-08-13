@@ -1,4 +1,4 @@
-﻿# VibeLearn AI Skill - Claude 사용자를 위한 선택적 확장
+# VibeLearn AI Skill - Claude 사용자를 위한 선택적 확장
 
 **버전**: 1.1
 **생성일**: 2026-01-25
@@ -62,12 +62,12 @@ mkdir -p ~/.claude/skills
 
 ```bash
 # Windows (PowerShell)
-mkdir "$env:USERPROFILE\.claude\skills\cua-vl"
-cp "extras\claude-skill\SKILL.md" "$env:USERPROFILE\.claude\skills\cua-vl\"
+mkdir "$env:USERPROFILE\.claude\skills\vibelearn"
+cp "extras\vibelearnai-skill\SKILL.md" "$env:USERPROFILE\.claude\skills\vibelearn\"
 
 # macOS/Linux
-mkdir -p ~/.claude/skills/cua-vl
-cp extras/claude-skill/SKILL.md ~/.claude/skills/cua-vl/
+mkdir -p ~/.claude/skills/vibelearn
+cp extras/vibelearnai-skill/SKILL.md ~/.claude/skills/vibelearn/
 ```
 
 ### Step 3: SKILL.md 경로 설정
@@ -100,7 +100,7 @@ Claude에게 다음과 같이 물어보세요:
 또는 직접 명령어 실행:
 
 ```
-/cua-vl start
+/vibelearn start
 ```
 
 ---
@@ -111,9 +111,9 @@ Claude에게 다음과 같이 물어보세요:
 
 | 명령어 | 설명 | 자연어 요청 |
 |--------|------|------------|
-| `/cua-vl start` | 새 Topic 시작 | "새 Topic을 시작하고 싶어" |
-| `/cua-vl roadmap` | Roadmap 생성 | "Roadmap을 만들고 싶어" |
-| `/cua-vl daily` | 일일 학습 시작 | "오늘 학습을 시작하겠습니다" |
+| `/vibelearn start` | 새 Topic 시작 | "새 Topic을 시작하고 싶어" |
+| `/vibelearn roadmap` | Roadmap 생성 | "Roadmap을 만들고 싶어" |
+| `/vibelearn daily` | 일일 학습 시작 | "오늘 학습을 시작하겠습니다" |
 
 ### 사용 예시
 
@@ -148,12 +148,12 @@ VibeLearn AI Skill:
 ### Q1: Skill이 활성화되지 않아요
 
 **확인 사항**:
-1. `~/.claude/skills/cua-vl/SKILL.md` 파일이 존재하는지 확인
+1. `~/.claude/skills/vibelearn/SKILL.md` 파일이 존재하는지 확인
 2. SKILL.md의 `{VibeLearn AI_ROOT}` 경로가 올바른지 확인
 3. Claude 재시작 시도
 
 **해결책**:
-- 정확한 명령어 사용: `/cua-vl start`
+- 정확한 명령어 사용: `/vibelearn start`
 - 경로가 올바른지 확인
 
 ### Q2: 폴더 생성 오류
@@ -179,7 +179,7 @@ VibeLearn AI Skill:
 ## 📁 파일 구조
 
 ```
-extras/claude-skill/
+extras/vibelearnai-skill/
 ├── SKILL.md      # Skill 정의 파일 (설치 대상)
 └── README.md     # 이 파일 (설치 가이드)
 ```
@@ -188,7 +188,7 @@ extras/claude-skill/
 
 ```
 ~/.claude/skills/
-└── cua-vl/
+└── vibelearn/
     └── SKILL.md    # 설치된 Skill
 ```
 
@@ -199,7 +199,7 @@ extras/claude-skill/
 ### Skill 업데이트 방법
 
 1. 최신 VibeLearn-AI Repository 다운로드
-2. `extras/claude-skill/SKILL.md`를 `~/.claude/skills/cua-vl/`에 복사
+2. `extras/vibelearnai-skill/SKILL.md`를 `~/.claude/skills/vibelearn/`에 복사
 3. `{VibeLearn AI_ROOT}` 경로 재설정
 4. Claude 재시작
 

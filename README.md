@@ -633,11 +633,11 @@ $env:ANTHROPIC_API_KEY = "sk-ant-..."
 
 ### 🧩 Claude Skill 등록하기 (선택, Claude Code / Claude Desktop 전용)
 
-VibeLearn AI는 프롬프트만으로도 모든 AI 도구에서 사용할 수 있지만, **Claude Code / Claude Desktop** 사용자는 `extras/claude-skill/`에 포함된 `cua-vl` Skill을 등록하면 Topic 폴더 생성, 파일 탐색 등을 `/cua-vl` 명령어로 자동화할 수 있습니다.
+VibeLearn AI는 프롬프트만으로도 모든 AI 도구에서 사용할 수 있지만, **Claude Code / Claude Desktop** 사용자는 `extras/vibelearnai-skill/`에 포함된 `vibelearn` Skill을 등록하면 Topic 폴더 생성, 파일 탐색 등을 `/vibelearn` 명령어로 자동화할 수 있습니다.
 
 > **Claude Code 사용자는 아래 수동 단계를 따라 할 필요 없이**, 이 레포 폴더에서 Claude Code에게 다음과 같이 요청하면 Claude Code가 Step 1~4를 대신 수행합니다:
 > ```
-> extras에 있는 claude-skill 을 등록해 주세요.
+> extras에 있는 vibelearnai-skill 을 등록해 주세요.
 > ```
 
 Claude Desktop 등 직접 파일 조작이 어려운 환경이거나 수동으로 등록하고 싶다면 아래 단계를 따르세요.
@@ -655,13 +655,13 @@ mkdir -p ~/.claude/skills
 **Step 2. Skill 폴더 생성 및 SKILL.md 복사**
 ```powershell
 # Windows (PowerShell)
-mkdir "$env:USERPROFILE\.claude\skills\cua-vl"
-cp "extras\claude-skill\SKILL.md" "$env:USERPROFILE\.claude\skills\cua-vl\"
+mkdir "$env:USERPROFILE\.claude\skills\vibelearn"
+cp "extras\vibelearnai-skill\SKILL.md" "$env:USERPROFILE\.claude\skills\vibelearn\"
 ```
 ```bash
 # macOS/Linux
-mkdir -p ~/.claude/skills/cua-vl
-cp extras/claude-skill/SKILL.md ~/.claude/skills/cua-vl/
+mkdir -p ~/.claude/skills/vibelearn
+cp extras/vibelearnai-skill/SKILL.md ~/.claude/skills/vibelearn/
 ```
 
 **Step 3. 경로 설정**: 복사한 `SKILL.md`를 열고 `{VibeLearn AI_ROOT}`를 실제 VibeLearn-AI 레포 경로로 모두 변경합니다.
@@ -675,9 +675,9 @@ cp extras/claude-skill/SKILL.md ~/.claude/skills/cua-vl/
 
 **Step 4. Claude 재시작**: VS Code(Claude Code) 또는 Claude Desktop 앱을 재시작합니다.
 
-**Step 5. 설치 확인**: `/cua-vl start`를 실행하거나 "VibeLearn AI Skill이 설치되어 있나요?"라고 물어봅니다.
+**Step 5. 설치 확인**: `/vibelearn start`를 실행하거나 "VibeLearn AI Skill이 설치되어 있나요?"라고 물어봅니다.
 
-등록 후에는 `/cua-vl start` → `/cua-vl roadmap` → `/cua-vl daily` 순서로 각 Phase를 진행할 수 있습니다. 문제 해결, 업데이트 방법 등 상세 가이드는 [extras/claude-skill/README.md](extras/claude-skill/README.md)를 참고하세요.
+등록 후에는 `/vibelearn start` → `/vibelearn roadmap` → `/vibelearn daily` 순서로 각 Phase를 진행할 수 있습니다. 문제 해결, 업데이트 방법 등 상세 가이드는 [extras/vibelearnai-skill/README.md](extras/vibelearnai-skill/README.md)를 참고하세요.
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: cua-vl
+name: vibelearn
 description: VibeLearn AI 학습 방법론을 지원합니다. 새 Topic 시작, Roadmap 생성, 일일 학습 계획 수립을 도와줍니다.
 allowed-tools:
   - Read
@@ -35,7 +35,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
 
 ---
 
-### 기능 1: 새 Topic 시작 (`/cua-vl start`)
+### 기능 1: 새 Topic 시작 (`/vibelearn start`)
 
 **활성화 조건**:
 - 사용자가 "새 Topic을 시작하고 싶어", "Topic을 시작하려고", "새로운 학습 주제를 시작" 등으로 요청할 때
@@ -80,7 +80,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
    ```
    "📌 다음 단계:"
    "1. topic_info.md 파일을 작성하세요"
-   "2. 작성 완료 후, 'Roadmap을 만들고 싶어' 또는 '/cua-vl roadmap'을 요청하세요"
+   "2. 작성 완료 후, 'Roadmap을 만들고 싶어' 또는 '/vibelearn roadmap'을 요청하세요"
    ```
 
 **중요 원칙**:
@@ -90,7 +90,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
 
 ---
 
-### 기능 2: Roadmap 생성 지원 (`/cua-vl roadmap`)
+### 기능 2: Roadmap 생성 지원 (`/vibelearn roadmap`)
 
 **활성화 조건**:
 - 사용자가 "Roadmap을 만들고 싶어", "로드맵 생성", "학습 계획을 세우고 싶어" 등으로 요청할 때
@@ -114,7 +114,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
    - 파일이 없으면:
      ```
      "⚠️ topic_info.md 파일이 없습니다."
-     "먼저 '/cua-vl start'를 실행하여 Topic을 시작하세요."
+     "먼저 '/vibelearn start'를 실행하여 Topic을 시작하세요."
      ```
      (여기서 중단)
    - 파일이 있으면 Read tool로 읽기
@@ -140,7 +140,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
 5. **다음 단계 안내**
    ```
    "📌 다음 단계:"
-   "Roadmap 생성 완료 후, '오늘 학습을 시작하고 싶어' 또는 '/cua-vl daily'를 요청하세요"
+   "Roadmap 생성 완료 후, '오늘 학습을 시작하고 싶어' 또는 '/vibelearn daily'를 요청하세요"
    ```
 
 **중요 원칙**:
@@ -155,7 +155,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
 
 ---
 
-### 기능 3: 일일 학습 계획 지원 (`/cua-vl daily`)
+### 기능 3: 일일 학습 계획 지원 (`/vibelearn daily`)
 
 **활성화 조건**:
 - 사용자가 "오늘 학습을 시작하고 싶어", "일일 학습 시작", "daily learning" 등으로 요청할 때
@@ -180,7 +180,7 @@ VibeLearn AI_ROOT = [사용자의 VibeLearn-AI 폴더 경로]
    - 없으면:
      ```
      "⚠️ Roadmap 파일이 없습니다."
-     "먼저 '/cua-vl roadmap'을 실행하여 Roadmap을 생성하세요."
+     "먼저 '/vibelearn roadmap'을 실행하여 Roadmap을 생성하세요."
      ```
      (여기서 중단)
 

@@ -7,7 +7,7 @@ VibeLearn AI is a learning methodology for systematically learning with AI and t
 
 **Core Philosophy**: "Learn with AI, structure what you've learned, and pave the way for the next learner."
 
-> **Execution Environment Note**: This workflow **works completely from this system prompt alone**. The Claude Skill (`/cua-vl`) in `extras/claude-skill/` is only an **optional** helper that automates folder creation and file lookup — even without it installed, follow Phases 1-4 below directly using whatever tools are available (Read/Write/Bash, etc.) for the same result.
+> **Execution Environment Note**: This workflow **works completely from this system prompt alone**. The Claude Skill (`/vibelearn`) in `extras/vibelearnai-skill/` is only an **optional** helper that automates folder creation and file lookup — even without it installed, follow Phases 1-4 below directly using whatever tools are available (Read/Write/Bash, etc.) for the same result.
 
 ---
 
@@ -50,7 +50,7 @@ Provide a general response in the following situations (VibeLearn AI inactive):
     - Copy the template file **in its entirety**
     - Fill in only the placeholders in the `[Step 1] Topic Info` section (e.g., `{TOPIC_NAME}`, `{DURATION}`, `{LEARNING_GOALS}`) with actual values from `topic_info.md`
     - Keep `[Step 2]`, `[Step 3]`, and all other sections **intact without modification** (no arbitrary abbreviation)
-    - If Claude Skill (`/cua-vl`) is installed: `/cua-vl roadmap` or `/cua-vl daily` commands automate this process
+    - If Claude Skill (`/vibelearn`) is installed: `/vibelearn roadmap` or `/vibelearn daily` commands automate this process
     - Without the Skill: AI reads `topic_info.md` directly and fills in the placeholders before saving
 
 ### Phase 2: Roadmap Generation (Once per Topic)
